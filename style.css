@@ -1,0 +1,207 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: #000;
+}
+
+.backgroud::before {
+    content: "";
+    background-image: url(./img/bg.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;  
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+nav .logo {
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.75);
+    padding: 20px 30px;
+    width: 390px;
+    height: 621px;
+    border-radius: 4px;
+}
+
+.box h2 {
+    color: #fff;
+    font-size: 32px;
+    position: relative;
+    left: -110px;
+    bottom: 120px;
+    padding-bottom: 25px;
+}
+
+#email, #senha, #login {
+    width: 300px;
+    position: relative;
+    bottom: 120px;
+    padding-bottom: 16.6px;
+    padding-top: 16.6px;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    border-style: none;
+}
+
+#email {
+    margin-bottom: 20px;
+}
+
+#senha {
+    margin-bottom: 40px;
+}
+
+#email, #senha {
+    background-color: #333333;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+#login {
+    background-color: #E50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 310px;
+}
+
+.mark input {
+    position: absolute;
+    display: none;
+}
+
+.mark {
+    display: flex;
+    flex-direction: row;
+}
+
+.mark p {
+    position: relative;
+    bottom: 105px;
+    left: -85px;
+    color: #737373;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.check {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background: #737373;
+    position: absolute;
+    bottom: 290px;
+    left: 75px;
+    cursor: pointer;
+}
+
+.mark input:checked ~ .check {
+    background: #fff;
+}
+
+.mark .check::after {
+    top: 1px;
+    left: 4px;
+    width: 5px;
+    height: 8px;
+    border: solid #000;
+    border-width: 0px 3px 3px 0px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.mark input:checked ~ .check::after {
+    display: block;
+}
+
+.help {
+    font-size: 14px;
+    position: absolute;
+    bottom: 290px;
+    right: 80px;
+    color: #737373;
+    text-decoration: none;
+}
+
+.help:hover {
+    text-decoration: underline;
+}
+
+.novo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 200px;
+    left: 75px;
+}
+
+.novo p {
+    color: #737373;
+}
+
+.novo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.novo a:hover {
+    text-decoration: underline;
+}
+
+.novo .assinar {
+    margin-left: 7px;
+}
+
+.cap {
+    color: #737373;
+    font-size: 14px;
+    position: absolute;
+    bottom: -50px;
+    width: 320px;
+}
+
+.sb-cap {
+    position: absolute;
+    bottom: -50px;
+    right: -103px;
+    font-size: 14px;
+}
+.sb-cap a {
+    color: #0071EB;
+}
